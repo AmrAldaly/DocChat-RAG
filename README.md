@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Streamlit-1.56-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
   <img src="https://img.shields.io/badge/LangChain-1.x-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
-  <img src="https://img.shields.io/badge/Groq-Gemma2-F55036?style=for-the-badge&logo=groq&logoColor=white" />
+  <img src="https://img.shields.io/badge/Groq-Llama%203.3%2070B-F55036?style=for-the-badge&logo=groq&logoColor=white" />
   <img src="https://img.shields.io/badge/ChromaDB-1.5-FF6F00?style=for-the-badge" />
   <img src="https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge" />
 </p>
@@ -21,7 +21,7 @@
 |---|---|
 | 🧠 **Conversational Memory** | History-aware retrieval rewrites every new query in the context of prior turns — no lost context across a long chat |
 | 📎 **Source Citations** | Every answer is backed by document name, page number, and a relevant text snippet |
-| ⚡ **Fast Inference** | Powered by [Groq](https://groq.com/) running **Gemma 2 9B** — near-instant LLM responses |
+| ⚡ **Fast Inference** | Powered by [Groq](https://groq.com/) running **Llama 3.3 70B Versatile** — near-instant LLM responses |
 | 🗄️ **Smart Caching** | Embeddings and vector stores are cached via Streamlit `@st.cache_resource` — no recomputation on re-runs |
 | 📂 **Multi-PDF Support** | Upload and query multiple PDFs simultaneously; citations always trace back to the correct file |
 | 🎨 **Professional UI** | Custom IBM Plex typography, styled citation cards, and a clean dark-accent chat interface |
@@ -34,7 +34,7 @@
 | Layer | Technology |
 |---|---|
 | **UI** | [Streamlit](https://streamlit.io/) |
-| **LLM** | [Groq API](https://groq.com/) — Gemma 2 9B (`langchain-groq`) |
+| **LLM** | [Groq API](https://groq.com/) — Llama 3.3 70B Versatile (`langchain-groq`) |
 | **Orchestration** | [LangChain Classic](https://pypi.org/project/langchain-classic/) — RAG chain builders |
 | **Embeddings** | `all-MiniLM-L6-v2` via [HuggingFace](https://huggingface.co/) (`langchain-huggingface`) |
 | **Vector Store** | [ChromaDB](https://www.trychroma.com/) (`langchain-chroma`) |
@@ -169,7 +169,7 @@ The app opens automatically at **`http://localhost:8501`**.
 │                         │                                   │
 │  3. Stuff-Documents Chain                                   │
 │     └─ Injects retrieved chunks into the QA prompt         │
-│        and calls Groq (Gemma 2 9B) for the final answer     │
+│        and calls Groq (Llama 3.3 70B) for the final answer  │
 │                         │                                   │
 │  4. RunnableWithMessageHistory                              │
 │     └─ Persists per-session chat history in                 │
