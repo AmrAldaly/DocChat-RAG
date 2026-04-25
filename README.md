@@ -58,8 +58,8 @@
 ### 1 — Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/docchat.git
-cd docchat
+git clone https://github.com/AmrAldaly/DocChat-RAG.git
+cd DocChat-RAG
 ```
 
 ---
@@ -210,7 +210,7 @@ The app opens automatically at **`http://localhost:8501`**.
 ## 📁 Project Structure
 
 ```
-docchat/
+DocChat-RAG/
 ├── app.py               # Main Streamlit application
 ├── requirements.txt     # All pinned Python dependencies
 ├── .env                 # API keys (never commit this)
@@ -223,7 +223,7 @@ docchat/
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to open a [GitHub Issue](https://github.com/your-username/docchat/issues) or submit a pull request.
+Contributions, issues, and feature requests are welcome! Feel free to open a [GitHub Issue](https://github.com/AmrAldaly/DocChat-RAG/issues) or submit a pull request.
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/my-feature`
