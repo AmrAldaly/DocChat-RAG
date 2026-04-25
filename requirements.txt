@@ -1,0 +1,43 @@
+# ==============================================================================
+# RAG Conversational App — requirements.txt
+# Tested with Python 3.11 / 3.12
+# ==============================================================================
+
+# --- Streamlit UI ---
+streamlit==1.56.0
+
+# --- LangChain ecosystem (1.x decoupled packages) ---
+#
+# Package           Contains
+# ─────────────────────────────────────────────────────────────────────────────
+# langchain         Thin meta-package / shims (keep for transitive deps)
+# langchain-classic create_history_aware_retriever, create_retrieval_chain,
+#                   create_stuff_documents_chain  ← THE FIX for ModuleNotFoundError
+# langchain-core    ChatPromptTemplate, MessagesPlaceholder,
+#                   BaseChatMessageHistory, RunnableWithMessageHistory
+# langchain-community ChatMessageHistory, PyPDFLoader
+# langchain-text-splitters RecursiveCharacterTextSplitter
+# langchain-chroma  Chroma vector store
+# langchain-huggingface HuggingFaceEmbeddings
+# langchain-groq    ChatGroq LLM
+# ─────────────────────────────────────────────────────────────────────────────
+langchain==1.2.15
+langchain-classic==1.0.4
+langchain-core==1.3.2
+langchain-community==0.4.1
+langchain-text-splitters==1.1.2
+langchain-chroma==1.1.0
+langchain-huggingface==1.2.2
+langchain-groq==1.1.2
+
+# --- Vector store backend ---
+chromadb==1.5.8
+
+# --- Embeddings (used by langchain-huggingface) ---
+sentence-transformers==5.4.1
+
+# --- PDF loading ---
+pypdf==5.9.0
+
+# --- Environment variables ---
+python-dotenv==1.2.2
